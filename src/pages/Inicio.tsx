@@ -1,25 +1,38 @@
+
+import React from "react";
 import styles from '../styles/inicio.module.css';
-import img from '../assets/Israel-fisio.jpeg'; // você pode trocar pela imagem real
+import img from '../assets/Israel-fisio.jpeg';
 
 export function Inicio() {
   return (
-    <div className={styles.pageContainer}>
-      <h1>FISIOTERAPIA DOMICILIAR </h1>
-      <p>Atendimento <strong>personalizado</strong> no conforto da sua casa. Reabilitação, alívio de dores e qualidade de vida.</p>
-
-      <div className={styles.content}>
-        <img src={img} alt="Fisioterapeuta com paciente" />
-        <div className={styles.text}>
-          <h2>Fisioterapia Domiciliar</h2>
-          <p>Atendimento personalizado no conforto da sua casa. Reabilitação, alívio de dores e qualidade de vida.</p>
-          <button>Agendar pelo WhatsApp</button>
-          <ul>
-            <li>✔️ CREFITO registrado</li>
-            <li>✔️ Atendimento domiciliar</li>
-            <li>✔️ Horários flexíveis</li>
-          </ul>
+    <main className={styles.mainBg}>
+      <section className={styles.heroSection}>
+        <div className={styles.heroGradient}>
+          <h1 className={styles.heroTitle}>
+            FISIOTERAPIA DOMICILIAR<br />
+          </h1>
+          <p className={styles.heroSubtitle}>
+            Qualidade de vida, no conforto de seu lar.
+          </p>
         </div>
-      </div>
-    </div>
+      </section>
+      <section className={styles.infoSection}>
+        <div className={styles.infoContent}>
+          <div className={styles.infoTextBox}>
+            <h2 className={styles.infoTitle}>Fisioterapia Domiciliar</h2>
+            <p className={styles.infoDesc}>
+              Atendimento personalizado no conforto da sua casa. Reabilitação, alívio de dores e qualidade de vida.
+            </p>
+          </div>
+          <img src={img} alt="Fisioterapeuta atendendo paciente" className={styles.infoImg} />
+          <div className={styles.diferenciaisVertical}>
+            <span>✓ CREFITO registrado</span>
+            <span>✓ Atendimento domiciliar</span>
+            <span>✓ Horários flexíveis</span>
+          </div>
+        </div>
+      </section>
+  {/* Rodapé removido conforme solicitado */}
+    </main>
   );
 }
