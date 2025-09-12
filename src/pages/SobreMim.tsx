@@ -87,11 +87,11 @@ export function SobreMim() {
           <span className={styles.centerLine} />
           <div className={`${styles.centerMark} ${styles.markTop}`}>
             <span className={styles.markDot}></span>
-            <span className={styles.markYear}>2020</span>
+            <span className={styles.markYear}>202x</span>
           </div>
           <div className={`${styles.centerMark} ${styles.markMid}`}>
             <span className={styles.markIcon}>💼</span>
-            <span className={styles.markYear}>2023</span>
+            <span className={styles.markYear}>202x</span>
           </div>
           <div className={`${styles.centerMark} ${styles.markBottom}`}>
             <span className={styles.markDot}></span>
@@ -124,29 +124,7 @@ export function SobreMim() {
         </div>
       </section>
 
-      {/* MEU TRABALHO */}
-      <section className={styles.comoTrabalho}>
-        <h2>Como conduzo os tratamentos</h2>
-        <p>Trabalho para que cada passo da sua recuperação seja mais leve e traga resultados reais no seu dia a dia.</p>
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <h3>Avaliação Detalhada</h3>
-            <p>Cada tratamento começa com uma análise minuciosa para identificar a causa real do problema.</p>
-          </div>
-          <div className={styles.card}>
-            <h3>Bem-estar Global</h3>
-            <p>Mais do que tratar dores, trabalho para que você tenha equilíbrio físico, emocional e social.</p>
-          </div>
-          <div className={styles.card}>
-            <h3>Cuidado Integral e Preventivo</h3>
-            <p>Além da reabilitação, foco na prevenção para que você viva saudável, ativo e livre de dores.</p>
-          </div>
-          <div className={styles.card}>
-            <h3>Empatia e Acolhimento</h3>
-            <p>Atendimento humano, escuta atenta e um ambiente acolhedor do começo ao fim do tratamento.</p>
-          </div>
-        </div>
-      </section>
+      
     </main>
   );
 }
