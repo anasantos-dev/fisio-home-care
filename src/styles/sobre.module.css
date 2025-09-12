@@ -1,11 +1,12 @@
 /* ---------- CURRÍCULO (Formação | Experiência) ---------- */
 .curriculoWrap {
   display: grid;
-  grid-template-columns: 1fr 5% 1fr;
-  gap: 5%;
+  grid-template-columns: 1fr 80px 1fr; /* esquerda | centro | direita */
+  gap: 40px;
   max-width: 1200px;
-  margin: 0 auto 4rem auto;
-  padding: 0 5%;
+  margin: 0 auto 64px auto;
+  padding: 40px 24px 0 24px;
+  align-items: start;
 }
 
 .blockTitle {
@@ -84,6 +85,53 @@
 }
 .card h3 { color: #24796b; margin-bottom: 12px; font-size: 1.2rem; }
 .card p  { font-size: 1rem; color: #333; }
+
+/* Coluna Central */
+.colCenter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* distribui anos + ícones */
+  min-height: 100%;
+  padding: 20px 0;
+}
+
+.centerLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  background: #5fd3a133;
+  border-radius: 3px;
+}
+
+.centerMark {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #0f766e;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.markDot {
+  width: 12px;
+  height: 12px;
+  background: #5fd3a1;
+  border-radius: 50%;
+}
+
+.markIcon {
+  font-size: 1.4rem;
+  color: #5fd3a1;
+}
 
 /* ---------- Responsivo ---------- */
 @media (max-width: 900px) {

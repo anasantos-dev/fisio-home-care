@@ -1,1 +1,9 @@
 /// <reference types="vite/client" />
+
+// permite importar imagens no TS/TSX
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.jpeg';
+declare module '*.gif';
+declare module '*.webp';
+declare module '*.svg';
