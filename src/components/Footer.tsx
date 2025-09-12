@@ -1,9 +1,38 @@
-import styles from '../styles/footer.module.css';
+import styles from "../styles/footer.module.css";
 
 export function Footer() {
   return (
-    <footer className={styles.footerContainer}>
-  <p>© 2025 Fisioterapia Domiciliar | Cuidando de você no conforto do seu lar ♡</p>
+    <footer className={styles.footer}>
+      <div className={styles.footerContent}>
+        <div className={styles.logoBox}>
+          <img src="/logo.svg" alt="Logo" className={styles.logo} />
+          <span className={styles.brand}>
+            Dr. Israel Cascaes
+            <small>Fisioterapia e Reabilitação</small>
+          </span>
+        </div>
+
+        <nav className={styles.nav}>
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre Mim</a>
+          <a href="#especialidades">Especialidades</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div className={styles.social}>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">
+            WhatsApp
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <div className={styles.copy}>
+        © {new Date().getFullYear()} Dr. Israel Cascaes - Todos os direitos reservados.
+      </div>
     </footer>
   );
 }

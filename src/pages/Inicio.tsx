@@ -17,7 +17,8 @@ export function Inicio() {
               </h1>
               
               <p className={styles.heroDesc}>
-                Atendimento humanizado e focado em você: o Dr. Israel Cascaes proporciona fisioterapia de excelência para promover sua saúde, autonomia e qualidade de vida no dia a dia. Sinta-se acolhido e confie em quem entende de reabilitação.
+                Atendimento humanizado e focado em você: o Dr. Israel Cascaes proporciona fisioterapia de excelência para promover sua saúde, autonomia e qualidade de vida no dia a dia.<br />
+                Sinta-se acolhido e confie em quem entende de reabilitação.
               </p>
               <div className={styles.heroActions}>
                 <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className={styles.heroBtnSecondary} style={{padding: '8px 18px', fontSize: '0.98rem'}}>
