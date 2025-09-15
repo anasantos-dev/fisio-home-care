@@ -3,6 +3,7 @@ import { Footer } from './components/Footer';
 import { Inicio } from './pages/Inicio';
 import { SobreMim } from './pages/SobreMim';
 import { Tratamentos } from './pages/Tratamentos'; // 👈 novo import
+import { Avaliacoes } from './pages/Avaliacoes';
 
 
 function App() {
@@ -18,8 +19,12 @@ function App() {
           <SobreMim />
         </section>
 
-        <section id="tratamentos">   {/* 👈 nova seção */}
+        <section id="tratamentos">   
           <Tratamentos />
+        </section>
+
+         <section id="avaliacoes">  
+          <Avaliacoes />
         </section>
 
         {/* Depois você pode adicionar também depoimentos e contato aqui */}

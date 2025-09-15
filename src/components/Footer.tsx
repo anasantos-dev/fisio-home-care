@@ -15,8 +15,8 @@ export function Footer() {
         <nav className={styles.nav}>
           <a href="#inicio">Início</a>
           <a href="#sobre">Sobre Mim</a>
-          <a href="#tratamentos">Cuidando da Sua Saúde</a>
-          <a href="#depoimentos">Depoimentos</a>
+          <a href="#tratamentos">Sua Saúde</a>
+          <a href="#avaliacoes">Avaliações</a>
           <a href="#contato">Contato</a>
         </nav>
 

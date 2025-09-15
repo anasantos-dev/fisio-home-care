@@ -1,0 +1,123 @@
+.avaliacoesSection {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fdfdfd;
+}
+
+/* Badge acima do título */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #eafaf3;
+  color: #1a6e4e;
+  font-weight: 600;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+/* Título */
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #c9a06c; /* dourado */
+  font-weight: 700;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 14px #0001;
+  text-align: left;
+  min-height: 200px;
+  position: relative;
+}
+
+.quote {
+  font-size: 2.5rem;
+  color: #c9a06c;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.text {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 30px;
+  line-height: 1.6;
+}
+
+.author {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #1a6e4e;
+}
+
+/* Swiper wrapper */
+.swiperWrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 60px; /* espaço para as setas nas laterais */
+}
+
+/* Botões de navegação */
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c9a06c;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.navBtn:hover {
+  background: #1a6e4e;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prevBtn {
+  left: 0; /* seta esquerda encostada na lateral */
+}
+
+.nextBtn {
+  right: 0; /* seta direita encostada na lateral */
+}
+
+/* Página atual */
+.page {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navBtn {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .swiperWrapper {
+    padding: 0 40px;
+  }
+}

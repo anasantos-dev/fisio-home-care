@@ -56,7 +56,7 @@ export function Tratamentos() {
 
   return (
     <section id="tratamentos" className={styles.tratamentosSection}>
-      <h2 className={styles.title}>Cuidando da Sua Saúde</h2>
+      <h2 className={styles.title}>Sua Saúde</h2>
       <div className={styles.divider}>
        
         <span className={styles.line}></span>
