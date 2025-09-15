@@ -1,24 +1,42 @@
 /* ---------- Início ---------- */
 .mainBg {
-  min-height: 100vh;
-  background: #fdf7f1;
+  
+  background: #fdf7f1; /* bege */
   display: flex;
   flex-direction: column;
 }
 
+.heroSection {
+  padding-bottom: 40px;  /* diminui a folga do fim da seção */
+}
+
+/* Hero do Início (fundo bege) */
+.heroSectionInicio {
+  background: #fdf7f1;
+  width: 100%;
+  padding: 80px 0;
+}
+
+/* Hero do Sobre Mim (fundo branco) */
+.heroSectionSobre {
+  background: #fff;
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* Container principal */
 .heroCard {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  box-shadow: 0 8px 32px #0002;
+  justify-content: space-between;  
+  box-shadow: none;
   padding: 4rem 5%;
   width: 100%;
   max-width: 1200px; /* limite centralizado */
-  margin: 2rem auto;
+  margin: 0 auto;
   gap: 5%;
-  border-radius: 24px;
+  border-radius: 0;
 }
 
 .heroTextBox {
@@ -31,15 +49,17 @@
 }
 
 .heroTitle {
-  font-size: 2.6rem;
+  font-size: 2.1rem;
   font-weight: 800;
   color: #1a6e4e;
   margin-bottom: 18px;
   line-height: 1.15;
+  border-left: 4px solid #5fd3a1; /* barra verde à esquerda */
+  padding-left: 12px;
 }
 
 .heroTitleGreen {
-  color: #5fd3a1;
+  color: #1a6e4e;
   display: block;
 }
 
@@ -47,8 +67,8 @@
   color: #c9a06c;
   display: block;
   font-weight: 700;
-  text-shadow: 0 4px 12px #e8d3b7;
-  margin-top: 8px;
+  margin-top: 6px;
+  font-size: 1.7rem;
 }
 
 .heroDesc {
@@ -65,37 +85,18 @@
   margin-top: 2rem;
 }
 
-.heroBtnPrimary {
-  background: linear-gradient(90deg, #2ecc71 0%, #3498db 100%);
-  color: #fff;
-  font-weight: 700;
-  padding: 12px 32px;
-  border-radius: 32px;
-  text-decoration: none;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 8px #0001;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: background 0.2s, box-shadow 0.2s;
-}
-.heroBtnPrimary:hover {
-  background: linear-gradient(90deg, #3498db 0%, #2ecc71 100%);
-  box-shadow: 0 4px 16px #0002;
-}
-
 .heroBtnSecondary {
   background: #fff;
   color: #5fd3a1;
   font-weight: 700;
-  padding: 10px 24px;
+  padding: 10px 28px;   /* mesmo padding do botão da Home */
   border-radius: 32px;
   text-decoration: none;
   font-size: 1rem;
   border: 2px solid #5fd3a1;
-  display: flex;
+  display: inline-flex;      /* só ocupa o espaço do texto */
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
   transition: background 0.2s, color 0.2s;
 }
 .heroBtnSecondary:hover {
@@ -112,7 +113,7 @@
 
 .heroImg {
   width: 100%;
-  max-width: 30rem; /* fluido */
+  max-width: 30rem;
   height: auto;
   border-radius: 18px;
   box-shadow: 0 4px 24px #0002;

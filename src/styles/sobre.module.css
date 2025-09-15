@@ -138,3 +138,58 @@
   .curriculoWrap { grid-template-columns: 1fr; gap: 2rem; margin: 2rem auto; }
   .cards { grid-template-columns: 1fr; }
 }
+
+.ctaBox {
+  background: #f4faf8; /* verde clarinho que harmoniza com o site */
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  box-shadow: 0 4px 12px #0001;
+}
+
+.ctaBox h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a6e4e;
+  margin-bottom: 1.5rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 32px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px #0003;
+}
+
+.heroBtnSecondary {
+  padding: 10px 24px !important;
+  font-size: 1rem !important;
+  font-weight: 700;
+  border: 2px solid #5fd3a1;
+  color: #5fd3a1;
+  background: #fff;
+  border-radius: 32px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.heroBtnSecondary:hover {
+  background: #5fd3a1;
+  color: #fff;
+}
+
+.heroImgSobre {
+  height: 680px;     /* altura maior só no Sobre Mim */
+  object-fit: cover; /* mantém a proporção */
+}
+
