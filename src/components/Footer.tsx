@@ -17,6 +17,7 @@ export function Footer() {
           <a href="#sobre">Sobre Mim</a>
           <a href="#tratamentos">Sua Saúde</a>
           <a href="#avaliacoes">Avaliações</a>
+          <a href="#informacoes">Informações Úteis</a>
           <a href="#contato">Contato</a>
         </nav>
 

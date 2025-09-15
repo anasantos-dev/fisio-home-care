@@ -2,8 +2,9 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Inicio } from './pages/Inicio';
 import { SobreMim } from './pages/SobreMim';
-import { Tratamentos } from './pages/Tratamentos'; // 👈 novo import
+import { Tratamentos } from './pages/Tratamentos'; 
 import { Avaliacoes } from './pages/Avaliacoes';
+import { InformacoesUteis } from './pages/InformacoesUteis';
 
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
 
          <section id="avaliacoes">  
           <Avaliacoes />
+        </section>
+
+        <section id="informacoes">
+          <InformacoesUteis />
         </section>
 
         {/* Depois você pode adicionar também depoimentos e contato aqui */}
