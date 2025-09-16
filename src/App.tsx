@@ -5,6 +5,7 @@ import { SobreMim } from './pages/SobreMim';
 import { Tratamentos } from './pages/Tratamentos'; 
 import { Avaliacoes } from './pages/Avaliacoes';
 import { InformacoesUteis } from './pages/InformacoesUteis';
+import { Chamada } from './pages/Chamada';
 
 
 function App() {
@@ -24,15 +25,18 @@ function App() {
           <Tratamentos />
         </section>
 
+         <section id="chamada">
+          <Chamada />
+        </section>
+
          <section id="avaliacoes">  
           <Avaliacoes />
         </section>
 
         <section id="informacoes">
           <InformacoesUteis />
-        </section>
+        </section>       
 
-        {/* Depois você pode adicionar também depoimentos e contato aqui */}
       </main>
       <Footer />
     </div>
