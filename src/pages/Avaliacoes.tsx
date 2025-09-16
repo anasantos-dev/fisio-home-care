@@ -25,8 +25,7 @@ export function Avaliacoes() {
 
   return (
     <section className={styles.avaliacoesSection}>
-      {/* Badge */}
-      <span className={styles.badge}>Avaliações</span>
+     
 
       {/* Título */}
       <h2 className={styles.title}>
@@ -45,8 +44,8 @@ export function Avaliacoes() {
           modules={[Navigation]}
           slidesPerView={3}
           spaceBetween={24}
-          speed={600}              // ⏳ transição suave (ms)
-          grabCursor={true}        // ✋ cursor "arrastável"
+          speed={600}              
+          grabCursor={true}        
           navigation={{
             nextEl: `.${styles.nextBtn}`,
             prevEl: `.${styles.prevBtn}`,

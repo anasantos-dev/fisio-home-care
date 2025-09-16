@@ -5,7 +5,7 @@ export function Header() {
     <header className={styles.header}>
       {/* Logo e nome */}
       <div className={styles.logo}>
-        <h1>Dr. Israel Cascas</h1>
+        <h1>Dr. Israel Cascaes</h1>
         <span>Fisioterapia e Reabilitação</span>
       </div>
 

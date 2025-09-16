@@ -12,8 +12,8 @@ export function Inicio() {
             <div className={styles.heroTextBox}>
 
               <h1 className={styles.heroTitle}>
-                <span className={styles.heroTitleGreen}>Tenha qualidade de vida com o<br /></span>
-                <span className={styles.heroTitleGold}>Dr. Israel Cascaes</span>
+                <span className={styles.heroTitleGreen}>Tenha qualidade de vida com <br /></span>
+                <span className={styles.heroTitleGold}> Israel Cascaes</span>
               </h1>
               
               <p className={styles.heroDesc}>
