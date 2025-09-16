@@ -27,7 +27,7 @@ export function SobreMim() {
             <div className={styles.ctaBox}>
   <h3>Agende sua consulta e cuide da sua saúde hoje mesmo!</h3>
  <a
-  href="https://wa.me/5511999999999"
+  href="https://wa.me/5591980254953"
   target="_blank"
   rel="noopener noreferrer"
   className={base.heroBtnSecondary}

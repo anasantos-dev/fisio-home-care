@@ -6,6 +6,7 @@ import { Tratamentos } from './pages/Tratamentos';
 import { Avaliacoes } from './pages/Avaliacoes';
 import { InformacoesUteis } from './pages/InformacoesUteis';
 import { Chamada } from './pages/Chamada';
+import { Contato } from './pages/Contato';
 
 
 function App() {
@@ -35,7 +36,11 @@ function App() {
 
         <section id="informacoes">
           <InformacoesUteis />
-        </section>       
+        </section>  
+
+        <section id="contato">
+          <Contato />
+        </section>  
 
       </main>
       <Footer />

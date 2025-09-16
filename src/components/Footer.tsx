@@ -22,7 +22,7 @@ export function Footer() {
         </nav>
 
         <div className={styles.social}>
-          <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">
+          <a href="https://wa.me/5591980254953" target="_blank" rel="noreferrer">
             WhatsApp
           </a>
           <a href="https://instagram.com" target="_blank" rel="noreferrer">

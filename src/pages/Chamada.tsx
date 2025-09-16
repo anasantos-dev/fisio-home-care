@@ -27,7 +27,14 @@ export function Chamada() {
   <span className={styles.highlightText}>agora mesmo!</span>
 </h3>
 
-        <button className={styles.button}>AGENDAR ATENDIMENTO</button>
+        <a
+  href="https://wa.me/5591980254953?text=Oi, gostaria de marcar um horário de fisioterapia. Pode me ajudar?"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className={styles.button}>AGENDAR ATENDIMENTO</button>
+</a>
+
       </div>
     </section>
   );
