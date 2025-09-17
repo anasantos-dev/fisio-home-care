@@ -1,57 +1,21 @@
 .footer {
   background: #f9f9f9;
   padding: 2rem 5% 1rem 5%;
-  box-shadow: 0 -2px 12px #0001;
-  margin-top: auto;
-}
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
 
-.footerContent {
+  margin-top: auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* garante responsividade */
-  gap: 1.5rem;
-}
-
-.logoBox {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.logo {
-  height: 2rem;
-  width: auto;
-}
-
-.brand {
-  font-weight: 700;
-  color: #1a6e4e;
-  display: flex;
-  flex-direction: column;
-  font-size: 0.95rem;
-}
-
-.brand small {
-  font-size: 0.75rem;
-  color: #888;
-}
-
-.nav {
-  display: flex;
-  gap: 1.5rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.nav a {
-  color: #24796b;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.nav a:hover {
-  color: #1a6e4e;
+.copy {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: left;
 }
 
 .social {
@@ -60,15 +24,15 @@
 }
 
 .social a {
-  color: #24796b;
-  font-weight: 600;
-  text-decoration: none;
+  color: #1a6e4e; 
+  font-size: 1.4rem;
+  transition: color 0.3s;
 }
 
 .social a:hover {
-  color: #1a6e4e;
+  color: #b5a564; 
 }
-
+/* SOS Software */
 .copy {
   margin-top: 1.5rem;
   text-align: center;
@@ -76,15 +40,24 @@
   color: #666;
 }
 
+/* SOS Software */
+.copy strong {
+  color: #1a6e4e; 
+}
+
+
 /* Responsivo */
-@media (max-width: 900px) {
-  .footerContent {
+@media (max-width: 768px) {
+  .footer {
     flex-direction: column;
-    align-items: center;
-  }
-  .nav {
     justify-content: center;
+    text-align: center;
   }
+
+  .copy {
+    text-align: center;
+  }
+
   .social {
     justify-content: center;
   }

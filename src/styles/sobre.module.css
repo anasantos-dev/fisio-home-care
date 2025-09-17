@@ -1,3 +1,10 @@
+/* Hero do Sobre Mim (fundo branco) */
+.heroSectionSobre {
+  background: #fff;
+  width: 100%;
+  padding: 5px 0;
+}
+
 /* ---------- CURRÍCULO (Formação | Experiência) ---------- */
 .curriculoWrap {
   display: grid;
@@ -140,7 +147,7 @@
 }
 
 .ctaBox {
-  background: #f4faf8; /* verde clarinho que harmoniza com o site */
+  background: #f4faf8; /* */
   border-radius: 16px;
   padding: 1rem;
   text-align: center;
@@ -189,7 +196,17 @@
 }
 
 .heroImgSobre {
-  height: 680px;     /* altura maior só no Sobre Mim */
+  height: 680px;     /* altura */
   object-fit: cover; /* mantém a proporção */
 }
+
+/* Esconde a coluna central (timeline) no celular */
+@media (max-width: 900px) {
+  .colCenter {
+    display: none;
+  }
+}
+
+
+
 

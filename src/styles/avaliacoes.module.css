@@ -26,19 +26,21 @@
 }
 
 .highlight {
-  color: #c9a06c; /* dourado */
+  color: #c9a06c;
   font-weight: 700;
 }
 
 /* Cards */
 .card {
-  background: #fff;
+  background: #f7f1f1;
   border-radius: 16px;
   padding: 28px;
   box-shadow: 0 4px 14px #0001;
   text-align: left;
   min-height: 200px;
   position: relative;
+  max-width: 580px;   
+  margin: 0 auto;     
 }
 
 .quote {

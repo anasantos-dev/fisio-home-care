@@ -1,7 +1,7 @@
 .informacoesSection {
   padding: 60px 20px;
   text-align: center;
-  background: #f0f8ff; /* azul bem clarinho */
+  background: #f0f8ff; 
   width: 100%;
 }
 .badge {
@@ -62,7 +62,7 @@
 
 /* Cor alternativa quando ativo */
 .pergunta.ativo {
-  background: #c9a06c; /* dourado */
+  background: #c9a06c; 
 }
 
 /* Ícone */

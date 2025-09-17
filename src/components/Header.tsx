@@ -1,36 +1,51 @@
+import { useState } from "react";
 import styles from "../styles/header.module.css";
+import logoImg from "../assets/logo.jpeg"; // 👈 nova logo
 
 export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className={styles.header}>
-      {/* Logo e nome */}
+      {/* Logo + nome */}
       <div className={styles.logo}>
-        <h1>Dr. Israel Cascaes</h1>
-        <span>Fisioterapia e Reabilitação</span>
+        <img src={logoImg} alt="Logo Israel Cascaes" className={styles.logoImg} />
+        <div>
+          <h1>ISRAEL CASCAES</h1>
+          <span>Fisioterapia Domiciliar</span>
+        </div>
       </div>
 
-      {/* Navegação central */}
-      <nav className={styles.nav}>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre Mim</a>
-        <a href="#tratamentos">Sua Saúde</a>
-        <a href="#avaliacoes">Avaliações</a>
-        <a href="#informacoes">Informações Úteis</a>
-        <a href="#contato">Contato</a>
+      {/* Botão Menu Hamburguer (mobile) */}
+      <button
+        className={styles.menuToggle}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? "✖" : "☰"}
+      </button>
+
+      {/* Overlay (fundo escuro) */}
+      {menuOpen && <div className={styles.overlay} onClick={() => setMenuOpen(false)}></div>}
+
+      {/* Navegação */}
+      <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
+        <a href="#inicio" onClick={() => setMenuOpen(false)}>Início</a>
+        <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre Mim</a>
+        <a href="#tratamentos" onClick={() => setMenuOpen(false)}>Sua Saúde</a>
+        <a href="#avaliacoes" onClick={() => setMenuOpen(false)}>Avaliações</a>
+        <a href="#informacoes" onClick={() => setMenuOpen(false)}>Informações Úteis</a>
+        <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
       </nav>
 
-      {/* Botão WhatsApp */}
+      {/* Botão WhatsApp (desktop apenas) */}
       <a
-        href="https://wa.me/5599999999999"
+        href="https://wa.me/5591980254953"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.whatsappBtn}
       >
         <i className="fab fa-whatsapp"></i> Fale no WhatsApp
       </a>
-
-
-
     </header>
   );
 }

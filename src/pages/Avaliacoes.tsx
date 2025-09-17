@@ -40,41 +40,42 @@ export function Avaliacoes() {
         <button className={`${styles.navBtn} ${styles.nextBtn}`}>→</button>
 
         {/* Swiper */}
-        <Swiper
-          modules={[Navigation]}
-          slidesPerView={3}
-          spaceBetween={24}
-          speed={600}              
-          grabCursor={true}        
-          navigation={{
-            nextEl: `.${styles.nextBtn}`,
-            prevEl: `.${styles.prevBtn}`,
-          }}
-          onSwiper={(swiper) => {
-            const perView = swiper.params.slidesPerView as number;
-            setTotalPaginas(Math.ceil(avaliacoes.length / perView));
-          }}
-          onSlideChange={(swiper) => {
-            const perView = swiper.params.slidesPerView as number;
-            const currentPage = Math.floor(swiper.activeIndex / perView) + 1;
-            setPaginaAtual(currentPage);
-          }}
-          breakpoints={{
-            0: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-        >
-          {avaliacoes.map((av) => (
-            <SwiperSlide key={av.id}>
-              <div className={styles.card}>
-                <span className={styles.quote}>&ldquo;</span>
-                <p className={styles.text}>{av.texto}</p>
-                <div className={styles.author}>{av.nome}</div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+       <Swiper
+  modules={[Navigation]}
+  slidesPerView={1}        
+  spaceBetween={24}
+  speed={600}
+  grabCursor={true}
+  navigation={{
+    nextEl: `.${styles.nextBtn}`,
+    prevEl: `.${styles.prevBtn}`,
+  }}
+  onSwiper={(swiper) => {
+    const perView = swiper.params.slidesPerView as number;
+    setTotalPaginas(Math.ceil(avaliacoes.length / perView));
+  }}
+  onSlideChange={(swiper) => {
+    const perView = swiper.params.slidesPerView as number;
+    const currentPage = Math.floor(swiper.activeIndex / perView) + 1;
+    setPaginaAtual(currentPage);
+  }}
+  breakpoints={{
+    0: { slidesPerView: 1 },     // mobile
+    768: { slidesPerView: 1 },   // tablet
+    1024: { slidesPerView: 1 },  // desktop
+  }}
+>
+  {avaliacoes.map((av) => (
+    <SwiperSlide key={av.id}>
+      <div className={styles.card}>
+        <span className={styles.quote}>&ldquo;</span>
+        <p className={styles.text}>{av.texto}</p>
+        <div className={styles.author}>{av.nome}</div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
       </div>
 
       {/* Página atual */}
