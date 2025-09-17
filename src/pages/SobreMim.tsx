@@ -1,12 +1,11 @@
-import base from '../styles/inicio.module.css';   // <-- usa o mesmo CSS do Início para o HERO
-import styles from '../styles/sobre.module.css';  // <-- CSS só das seções novas
+import base from '../styles/inicio.module.css';   
+import styles from '../styles/sobre.module.css';  
 import img from '../assets/sobreMim.jpg';
 
 export function SobreMim() {
   return (
     <main className={base.mainBg}>
-      {/* HERO – agora com fundo branco apenas nesta seção */}
-      <section className={base.heroSectionSobre}>
+            <section className={base.heroSectionSobre}>
         <div className={base.heroCard}>
           <div className={base.heroTextBox}>
             <h1 className={base.heroTitle}>

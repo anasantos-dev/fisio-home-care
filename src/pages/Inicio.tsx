@@ -1,5 +1,3 @@
-
-import React from "react";
 import styles from '../styles/inicio.module.css';
 import img from '../assets/Israel-fisio.jpeg';
 

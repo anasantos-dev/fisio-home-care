@@ -1,6 +1,4 @@
 import styles from "../styles/tratamentos.module.css";
-
-// importa imagens
 import reabilitacaoImg from "../assets/tratamentos/reabilitacao.jpeg";
 import mobilidadeImg from "../assets/tratamentos/mobilidade.jpg";
 import doresImg from "../assets/tratamentos/dores.jpg";
