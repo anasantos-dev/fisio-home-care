@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../styles/header.module.css";
-import logoImg from "../assets/logo.jpeg"; // 👈 nova logo
+import logoImg from "../assets/logo.jpeg"; 
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
