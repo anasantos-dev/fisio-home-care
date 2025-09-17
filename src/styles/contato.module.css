@@ -32,7 +32,7 @@
 .infoBox {
   display: flex;
   flex-direction: column;
-  gap: 3.5rem; /* aumenta o espaço entre os cards */
+  gap: 3.5rem; /* espaço entre os cards */
 }
 
 /*  
@@ -96,6 +96,65 @@
   transform: scale(1.05);
 }
 
+/* Só o card de e-mail */
+.infoItemEmail {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  text-align: center;      
+}
+/*  cartinha */
+.infoItemEmail .icon {
+  font-size: 2rem;  
+  margin-bottom: 0.5rem;
+  color: #2f9e78;
+  margin-right: 0;      
+  margin-bottom: 0.5rem; 
+}
+
+.infoItemEmail h3 {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0f766e;
+}
+
+.infoItemEmail p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Só o card de horário */
+.infoItemHorario {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  text-align: center;      
+}
+
+.infoItemHorario .icon {
+  font-size: 2rem;
+  margin-right: 0;      
+  margin-bottom: 0.5rem;
+  color: #2f9e78;
+}
+
+.infoItemHorario h3 {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0f766e;
+}
+
+.infoItemHorario p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+
+
 /* Mensagem de status do formulário */
 .status {
   margin-top: 1rem;
@@ -105,14 +164,14 @@
   transition: opacity 0.3s ease;
 }
 
-/* Sucesso → verde */
+/* Sucesso  */
 .status.success {
-  color: #2f9e78; /* verde já usado no site */
+  color: #2f9e78; 
 }
 
-/* Erro → vermelho */
+/* Erro  */
 .status.error {
-  color: #d9534f; /* vermelho chamativo */
+  color: #d9534f; 
 }
 
 
@@ -141,4 +200,17 @@
   70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(47,158,120, 0); }
   100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(47,158,120, 0); }
 }
+
+.whatsLink {
+  color: #c9a06c; 
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.whatsLink:hover {
+  color: #1a6e4e; 
+}
+
+
 

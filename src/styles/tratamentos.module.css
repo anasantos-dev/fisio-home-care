@@ -10,12 +10,12 @@
   color: #1a6e4e; 
   margin-bottom: 12px;
 }
-
-.subtitle {/* Conheça os principais..... */
+/* Conheça os principais..... */
+.subtitle {
   font-size: 1.3rem;
   color:  #1a6e4e;
   margin: 0 auto 40px;
-  max-width: 900px;   /* largura máxima para melhor leitura */
+  max-width: 900px;   /* largura máxima */
   line-height: 1.6;
 }
 

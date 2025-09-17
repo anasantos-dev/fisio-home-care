@@ -23,7 +23,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  color: rgba(33, 53, 71, 0.95); /* cor base clara para texto */
+  color: rgba(33, 53, 71, 0.95); 
 }
 
 /* Containers principais */
@@ -34,9 +34,10 @@ body {
   width: 100%;
 }
 
+/* cada página / alinhamento interno */
 .mainContent {
   flex: 1;
-  display: block; /* cada página controla o alinhamento interno */
+  display: block; 
   width: 100%;
 }
 
@@ -72,7 +73,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Tema claro (fallback) */
+/* fallback */
 @media (prefers-color-scheme: light) {
   body {
     background: #ffffff;
@@ -86,3 +87,10 @@ button:focus-visible {
     color: #213547;
   }
 }
+
+/* Ajuste para navegação com header fixo */
+html {
+  scroll-behavior: smooth;   /* deixa a rolagem suave */
+  scroll-padding-top: 90px;  /* compensa a altura do header */
+}
+

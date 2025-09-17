@@ -1,27 +1,27 @@
 /* ---------- Início ---------- */
 .mainBg {
   
-  background: #fdf7f1; /* bege */
+  background: #fdf7f1; 
   display: flex;
   flex-direction: column;
 }
 
 .heroSection {
-  padding-bottom: 40px;  /* diminui a folga do fim da seção */
+  padding-bottom: 40px;  /* */
 }
 
 /* Hero do Início (fundo bege) */
 .heroSectionInicio {
   background: #fdf7f1;
   width: 100%;
-  padding: 80px 0;
+  padding: 5px 0;
 }
 
 /* Hero do Sobre Mim (fundo branco) */
 .heroSectionSobre {
   background: #fff;
   width: 100%;
-  padding: 40px 0;
+  padding: 5px 0;
 }
 
 /* Container principal */

@@ -11,11 +11,11 @@
 }
 
 .green {
-  color: #2f9e78; /* verde */
+  color: #2f9e78; 
 }
 
 .gold {
-  color: #c68c53; /* dourado */
+  color: #c68c53; 
 }
 
 /* Divider (linha + bolinhas) */
@@ -81,8 +81,8 @@
 }
 
 .highlightText {
-  background-color: #fff;       /* fundo branco */
-  color: #c68c53;              /* dourado */
+  background-color: #fff;       
+  color: #c68c53;              
   font-weight: bold;
   padding: 0.3rem 0.8rem;
   border-radius: 6px;

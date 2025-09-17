@@ -48,30 +48,36 @@ export function Contato() {
       <div className={styles.contentGrid}>
         {/* Informações de Contato */}
         <div className={styles.infoBox}>
-          <div className={styles.infoItem}>
-            <FaClock className={styles.icon} />
-            <div>
-              <h3>Horário de Atendimento</h3>
-              <p>Segunda a Sexta-feira das 08h às 19h</p>
-              <p>Atendimento apenas com horário marcado</p>
-            </div>
-          </div>
 
-          <div className={styles.infoItem}>
-            <FaEnvelope className={styles.icon} />
-            <div>
-              <h3>E-mail</h3>
-              <p>contato@fisiohome.com.br</p>
-            </div>
-          </div>
 
-          <div className={`${styles.infoItem} ${styles.infoItemWhats}`}>
-            <FaWhatsapp className={styles.icon} />
-            <div>
-              <h3>WhatsApp</h3>
-              <p>(91) 99237-2799</p>
-            </div>
-          </div>
+          <div className={styles.infoItemHorario}>
+  <FaClock className={styles.icon} />
+     <h3>Horário de Atendimento</h3>
+      <p>Segunda a Sexta-feira das 08h às 19h</p>
+     <p>Atendimento apenas com horário marcado</p>
+      </div>
+
+       <div className={styles.infoItemEmail}>
+  <FaEnvelope className={styles.icon} />
+  <h3>E-mail</h3>
+  <p>israelcascaes83@gmail.com</p>
+</div>
+
+
+ <div className={`${styles.infoItem} ${styles.infoItemWhats}`}>
+  <FaWhatsapp className={styles.icon} />
+  <div>
+    <h3>WhatsApp</h3>
+    <a
+      href="https://wa.me/5591980254953?text=Olá! Gostaria de agendar uma consulta."
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.whatsLink}
+    >
+      Conversar Agora!
+    </a>
+  </div>
+</div>
 
           {/* 
           <div className={styles.infoItem}>
